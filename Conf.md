@@ -8,7 +8,7 @@
 {
 	"serveur": {
 		"urlProd": "https://live.neos360.com/apical/test/apicam",
-		"urlDev": "http://127.0.0.1:5503",
+		"urlDev": "http://127.0.0.1:5500",
 		"isProd": false
 	},
 	"json": {

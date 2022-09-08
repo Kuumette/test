@@ -27,8 +27,8 @@ function loadView(type, side, displayImage, brightness, contrast, invert) {
 	<p id="name">apicam</p>
 `;
 	fetch(
-		//"http://127.0.0.1:5500/assets/config/config.json"
-		"https://live.neos360.com/apical/test/apicam/assets/config/config.json"
+		"http://127.0.0.1:5500/assets/config/config.json"
+		//"https://live.neos360.com/apical/test/apicam/assets/config/config.json"
 	)
 		.then((res) => {
 			return res.json();
