@@ -33,8 +33,8 @@ function dateImage(type, side = "main") {
 	let mj = "";
 
 	fetch(
-		//"http://127.0.0.1:5500/assets/config/image.json"
-		"https://live.neos360.com/apical/test/apicam/assets/config/image.json"
+		"http://127.0.0.1:5500/assets/config/image.json"
+		//"https://live.neos360.com/apical/test/apicam/assets/config/image.json"
 	)
 		.then((response) => {
 			return response.json();
@@ -49,7 +49,7 @@ function dateImage(type, side = "main") {
 				date2 = new Date();
 				diff = dateDiff(date1, date2);
 				mj = `
-					derniere mise à jour de l'image ${type} depuis : ${diff.day}d ${diff.hour}h ${diff.min}m ${diff.sec}s
+				latest image update ${type} from : ${diff.day}d ${diff.hour}h ${diff.min}m ${diff.sec}s
 					`;
 				miseAJour.innerHTML = mj;
 			} else if (type === "lastSubstractionImage") {

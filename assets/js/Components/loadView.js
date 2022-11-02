@@ -37,8 +37,8 @@ function loadView(type, side, displayImage, brightness, contrast, invert) {
 			const timer = json.json.timer;
 			setInterval(() => {
 				fetch(
-					//"http://127.0.0.1:5500/assets/config/image.json"
-					"https://live.neos360.com/apical/test/apicam/assets/config/image.json"
+					"http://127.0.0.1:5500/assets/config/image.json"
+					//"https://live.neos360.com/apical/test/apicam/assets/config/image.json"
 				)
 					.then((response) => {
 						return response.json();

@@ -14,12 +14,13 @@ html {
 	z-index: 8;
 }
 #warning {
-	width: 100%;
-	position: fixed;
+	width: 20%;
+	position: relative;
 	z-index: 56;
-	text-align: center;
-	margin: auto;
+	/* text-align: center; */
 	color: white;
+	border: 1px solid red;
+	margin-top: -3.5%;
 }
 
 svg {
@@ -73,6 +74,7 @@ nav {
 	position: fixed;
 	width: 12%;
 }
+
 
 p {
 	color: #f0f0f0;
