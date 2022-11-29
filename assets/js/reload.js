@@ -22,8 +22,8 @@ async function reload(type, side = "main") {
 	let tmp = new Date();
 	const response = await fetch(
 		//"https://live.neos360.com/eso/paranal/apicam/assets/config/config.json"
-		"http://127.0.0.1:5500/assets/config/config.json"
-		//"https://live.neos360.com/apical/test/apicam/assets/config/config.json"
+		//"http://127.0.0.1:5500/assets/config/config.json"
+		"https://live.neos360.com/eso/paranal/alpaca/assets/config/config.json"
 	);
 
 	const { json, serveur } = await response.json();

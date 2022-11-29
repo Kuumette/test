@@ -33,14 +33,14 @@ function dateImage(type, side = "main") {
 	let mj = "";
 
 	fetch(
-		"http://127.0.0.1:5500/assets/config/image.json"
-		//"https://live.neos360.com/apical/test/apicam/assets/config/image.json"
+		//"http://127.0.0.1:5500/assets/config/image.json"
+		"https://live.neos360.com/eso/paranal/alpaca/assets/config/image.json"
 	)
 		.then((response) => {
 			return response.json();
 		})
 		.then((myJson) => {
-			const url = `https://live.neos360.com/apical/test/apicam/${myJson[type].img}`;
+			const url = `https://live.neos360.com/eso/paranal/alpaca/${myJson[type].img}`;
 			//`http://127.0.0.1:5500/${myJson[type].img}`;
 			if (type === "lastImage") {
 				let dte = lastModified(url);
